@@ -17,7 +17,6 @@ function solution(arr) {
   for (let i = 0; i < n; i++) {
     let rank = 1;
     for (let j = 0; j < n; j++) {
-      if (i === j) continue;
       if (arr[i] < arr[j]) rank++;
     }
     answer.push(rank);
@@ -27,3 +26,4 @@ function solution(arr) {
 }
 
 console.log(solution([87, 89, 92, 100, 76]));
+console.log(solution([92, 92, 92, 100, 76]));
